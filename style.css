@@ -2,3 +2,20 @@
     width: 250px;
     height: 50px;
 }
+
+.slider{
+    width: 95%;
+    margin: auto;
+}
+
+.slider ul{
+    display: flex;
+    padding: 0%;
+    width: 400%;
+}
+
+.slider li{
+    width: 100%;
+    list-style: none;
+    
+}
