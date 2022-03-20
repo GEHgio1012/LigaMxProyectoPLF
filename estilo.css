@@ -2,11 +2,18 @@
     width: 250px;
     height: 50px;
 }
+#banner{
+    background-image: url("recursos/fondobanner1.jpg");
+    background-position: center;
+    background-color: rgba(0,0,0,.5);
+    background-blend-mode: darken;
+}
 
 .slider{
     width: 95%;
     margin: auto;
     overflow: hidden;
+    height: 650px;
 }
 
 .slider ul{
@@ -14,7 +21,7 @@
     padding: 0%;
     width: 400%;
 
-    animation: cambios 20s infinite alternate;
+    animation: cambio 20s infinite alternate;
 }
 
 .slider li{
@@ -28,16 +35,16 @@
     height: 70%;
 }
 
-@keyframes cambios{
+@keyframes cambio {
     0% { margin-left: 0;}
     20% { margin-left: 0;}
 
-    25% { margin-left: -100;}
-    45% { margin-left: -100;}
+    25% { margin-left: -100%;}
+    45% { margin-left: -100%;}
 
-    50% { margin-left: -200;}
-    70% { margin-left: -200;}
+    50% { margin-left: -200%;}
+    70% { margin-left: -200%;}
 
-    75% { margin-left: -300;}
-    100% { margin-left: -300;}
+    75% { margin-left: -300%;}
+    100% { margin-left: -300%;}
 }

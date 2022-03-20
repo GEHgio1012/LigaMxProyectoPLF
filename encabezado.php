@@ -14,7 +14,7 @@
 </head>
 <body>
     <section>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav id="banner" class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
     <a class="navbar-brand" href="#"><img id="imagenlogo" class="imagenl" src="recursos/logoligaMx.png" alt=""></a>
 
@@ -28,21 +28,21 @@
           <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-house"></i></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Partidos</a>
+          <a class="nav-link" href="partidos.php">Partidos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Equipos</a>
+          <a class="nav-link" href="index.php">Equipos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Tabla de posicion</a>
+          <a class="nav-link" href="TP.php">Tabla de posicion</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Acerca De</a>
+          <a class="nav-link" href="about.php">Acerca De</a>
         </li>
       </ul>
         <form class="d-flex">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
+        <button class="btn btn-success" type="submit">Search</button>
       </form>
       
       </div>
