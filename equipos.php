@@ -25,6 +25,8 @@
         ';
     ?>
     </section>
+
+    <!--Seccion para mostrar los porteros-->
     <section class="cporteros">
     <div class="row p-4 w3-center" align="center">
             <h1 style="color:white;" class="mt-5 mb-5">PORTEROS</h1>
@@ -41,6 +43,59 @@
                     <h5 class="card-title" style="min-height:2.5rem;">'.$filajg["Njugador"].'</h5>
                     <h6 class="card-subtitle mb-2 text-muted">'.$filajg["Posicion"].'</h6>
                     <p class="card-text" style="min-height:9rem;">Nacionalidad: '.$filajg["Nacionalidad"].'<br/>Edad: '.$filajg["Edad"].'<br/>Tarjetas Amarillas: '.$filajg["Amonestaciones"].' Expulsiones: '.$filajg["Expulsiones"].'</p>
+                </div>
+            </div>
+            </div>
+        ';
+            }
+    ?>
+    </div>
+    </section>
+
+    <!--Seccion para los defensas-->
+    <section class="cdefensas">
+    <div class="row p-4 w3-center" align="center">
+            <h1 style="color:white;" class="mt-5 mb-5">DEFENSAS</h1>
+            
+    <?php
+        $idjugadores2='SELECT * FROM jugadores WHERE IdEquipo='.$fila["IdEquipo"].' AND Posicion="Defensa"';
+        $conjug2=$conn->query($idjugadores2);
+            while ($filajg2=$conjug2->fetch_array()) {
+                # code...
+            echo '
+            <div class="col p-4 m-4" align="center">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title" style="min-height:2.5rem;">'.$filajg2["Njugador"].'</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">'.$filajg2["Posicion"].'</h6>
+                    <p class="card-text" style="min-height:9rem;">Nacionalidad: '.$filajg2["Nacionalidad"].'<br/>Edad: '.$filajg2["Edad"].'<br/>Tarjetas Amarillas: '.$filajg2["Amonestaciones"].' Expulsiones: '.$filajg2["Expulsiones"].'</p>
+                </div>
+            </div>
+            </div>
+        ';
+            }
+    ?>
+    </div>
+    </section>
+
+    <!--Seccion para los medios-->
+
+    <section class="cmedios">
+    <div class="row p-4 w3-center" align="center">
+            <h1 style="color:white;" class="mt-5 mb-5">MEDIOS</h1>
+            
+    <?php
+        $idjugadores3='SELECT * FROM jugadores WHERE IdEquipo='.$fila["IdEquipo"].' AND Posicion="Defensa"';
+        $conjug3=$conn->query($idjugadores3);
+            while ($filajg3=$conjug3->fetch_array()) {
+                # code...
+            echo '
+            <div class="col p-4 m-4" align="center">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title" style="min-height:2.5rem;">'.$filajg3["Njugador"].'</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">'.$filajg3["Posicion"].'</h6>
+                    <p class="card-text" style="min-height:9rem;">Nacionalidad: '.$filajg3["Nacionalidad"].'<br/>Edad: '.$filajg3["Edad"].'<br/>Tarjetas Amarillas: '.$filajg3["Amonestaciones"].' Expulsiones: '.$filajg3["Expulsiones"].'</p>
                 </div>
             </div>
             </div>
