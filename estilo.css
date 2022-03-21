@@ -49,3 +49,18 @@
     100% { margin-left: -300%;}
 }
 
+.cover{
+    height: 600px;
+    background-image: url("recursos/fondobannereq1.jpg");
+    background-position: center;
+    background-color: rgba(0,0,0,.5);
+    background-blend-mode: darken;
+}
+
+.cporteros{
+    height: 600px;
+    background-image: url("recursos/fondobannerporteros.jpg");
+    background-position: center;
+    background-color: rgba(0,0,0,.5);
+    background-blend-mode: darken;
+}

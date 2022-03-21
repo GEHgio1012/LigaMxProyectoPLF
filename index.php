@@ -28,7 +28,7 @@
           <p class="card-text" style="color:black;">Posicion: '.$filaeq["Posicion"].'</p>
           <p class="card-text" style="min-height: 5rem;color:black;">Director Tecnico: '.$filaeq["DirectorTec"].'</p>
           
-          <a href="#" class="btn btn-success">Mas de '.$filaeq["NombreE"].'</a>
+          <a href="equipos.php?equi='.$filaeq[IdEquipo].'" class="btn btn-success">Mas de '.$filaeq["NombreE"].'</a>
         </div>
       </div>
       </div>
