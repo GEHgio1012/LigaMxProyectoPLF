@@ -14,6 +14,7 @@ include "conexion.php";
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/70f7b80121.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
@@ -44,11 +45,12 @@ include "conexion.php";
           <a class="nav-link" href="about.php">Acerca De</a>
         </li>
       </ul>
-        <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-success" type="submit">Search</button>
-      </form>
       
+        <form class="d-flex" action="equipos.php" method="POST">
+        <input class="form-control me-2" name="buscar" id="buscador" type="search" placeholder="Buscar Equipo" aria-label="Search">
+        <input class="btn btn-success" type="submit" name="enviar" value="Enviar" >
+      </form>
+    
       </div>
     </div>
   </div>

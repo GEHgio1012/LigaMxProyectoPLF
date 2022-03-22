@@ -50,7 +50,7 @@
     <section>
         <div class="row mt-5 mb-5">
             <div class="container col-12 col-sm-4 col-lg-5 d-flex flex-column align-items-center p-4">
-            <table class="table table-dark table-sm">
+            <table class="table mb-5 mt-5 p-4 table-dark table-sm">
                 <thead>
                     <th>INTEGRANTES</th>
                 </thead>

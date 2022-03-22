@@ -63,8 +63,14 @@
     background-blend-mode: darken;
 }
 .cdefensas{
-    height: 600px;
     background-image: url("recursos/fondodefensa.jpg");
+    background-position: center;
+    background-color: rgba(0,0,0,.5);
+    background-blend-mode: darken;
+}
+
+.cmedios{
+    background-image: url("recursos/fondobannerdefensa.jpg");
     background-position: center;
     background-color: rgba(0,0,0,.5);
     background-blend-mode: darken;

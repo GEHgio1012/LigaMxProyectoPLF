@@ -1,4 +1,11 @@
 <?php
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        # code...
+        $nombre=$_POST['nombre'];
+        echo $nombre;
+    
+    }
+
     include "encabezado.php";
     $idenqui='SELECT * FROM equipos WHERE IdEquipo='.$_GET["equi"];
     $conequi=$conn->query($idenqui);
@@ -13,7 +20,7 @@
     
         <div class="row">
             <div class="col w3-center p-4 m-4">
-                <img src="'.$fila["LogoE"].'" alt="" srcset="">
+                <img src="'.$fila["LogoE"].'" style="width:25rem; height:25rem;" alt="" srcset="">
             </div>
             <div class="col p-5 m-5">
                 <b><h1 class="mb-5" style="color:white;">'.$fila["NombreE"].'</h1></b> 
@@ -24,6 +31,7 @@
         </div>
         ';
     ?>
+    <link rel="stylesheet" href="estilo.css">
     </section>
 
     <!--Seccion para mostrar los porteros-->
@@ -85,7 +93,7 @@
             <h1 style="color:white;" class="mt-5 mb-5">MEDIOS</h1>
             
     <?php
-        $idjugadores3='SELECT * FROM jugadores WHERE IdEquipo='.$fila["IdEquipo"].' AND Posicion="Defensa"';
+        $idjugadores3='SELECT * FROM jugadores WHERE IdEquipo='.$fila["IdEquipo"].' AND Posicion="Medio"';
         $conjug3=$conn->query($idjugadores3);
             while ($filajg3=$conjug3->fetch_array()) {
                 # code...
@@ -105,6 +113,33 @@
     </div>
     </section>
 
+    <!--Seccion para los delanteros-->
+
+    <section class="cdelanteros">
+    <div class="row p-4 w3-center" align="center">
+            <h1 style="color:white;" class="mt-5 mb-5">DELANTEROS</h1>
+            
+    <?php
+        $idjugadores4='SELECT * FROM jugadores WHERE IdEquipo='.$fila["IdEquipo"].' AND Posicion="Delantero"';
+        $conjug4=$conn->query($idjugadores4);
+            while ($filajg4=$conjug4->fetch_array()) {
+                # code...
+            echo '
+            <div class="col p-4 m-4" align="center">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title" style="min-height:2.5rem;">'.$filajg4["Njugador"].'</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">'.$filajg4["Posicion"].'</h6>
+                    <p class="card-text" style="min-height:9rem;">Nacionalidad: '.$filajg4["Nacionalidad"].'<br/>Edad: '.$filajg4["Edad"].'<br/>Tarjetas Amarillas: '.$filajg4["Amonestaciones"].' Expulsiones: '.$filajg4["Expulsiones"].'</p>
+                </div>
+            </div>
+            </div>
+        ';
+            }
+    ?>
+    </div>
+    </section>
+
     <style>
         :root{
     --color-dark: #1b1b1b;
@@ -114,4 +149,25 @@
         body{
             background-color: var(--color-dark);
         }
+
+        .cdefensas{
+    background-image: url("recursos/fondodefensa.jpg");
+    background-position: center;
+    background-color: rgba(0,0,0,.5);
+    background-blend-mode: darken;
+}
+
+.cmedios{
+    background-image: url("recursos/fondobannerdefensa.jpg");
+    background-position: center;
+    background-color: rgba(0,0,0,.5);
+    background-blend-mode: darken;
+}
+
+.cdelanteros{
+    background-image: url("recursos/fondodelantero.jpg");
+    background-position: center;
+    background-color: rgba(0,0,0,.5);
+    background-blend-mode: darken;
+}
     </style>
