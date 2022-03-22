@@ -53,25 +53,54 @@
             <table class="table mb-5 mt-5 p-4 table-dark table-sm">
                 <thead>
                     <th>INTEGRANTES</th>
+                    <th>Matricula</th>
                 </thead>
                 <tbody>
-                    <tr><td>Eugenio Hernadez Giovanni</td></tr>
+                    <tr>
+                        <td>Eugenio Hernadez Giovanni</td>
+                        <td>186W0224</td>
+                    </tr>
                     <tr>
                         <td>Castro Antonio Daniela</td>
+                        <td>186W0217</td>
                     </tr>
                     <tr>
                         <td>
                             Romero Flores Mariana
                         </td>
+                        <td>182W0244</td>
                     </tr>
                     <tr>
                         <td>Sanchez Luna Arturo</td>
+                        <td>186W0358</td>
                     </tr>
                     <tr>
                         <td>Lechuga Martines Miguel Angel</td>
+                        <td>186W0297</td>
                     </tr>
                     <tr>
-                        <td>Chacon Echevarria Jesus</td>
+                        <td>Chacon Echavarria Jesus Omar</td>
+                        <td>185W0361</td>
+                    </tr>
+                    <tr>
+                        <td>Adrian Calep Vasquez Ramirez</td>
+                        <td>186W0525</td>
+                    </tr>
+                    <tr>
+                        <td>Elizabeth Ferrer Paez</td>
+                        <td>186W0212</td>
+                    </tr>
+                    <tr>
+                        <td>Rafael Vega Sánchez</td>
+                        <td>186W0218</td>
+                    </tr>
+                    <tr>
+                        <td>Alfonso De Jesús Garcés</td>
+                        <td>186W0221</td>
+                    </tr>
+                    <tr>
+                        <td>Ortega López Guadalupe</td>
+                        <td>186W0487</td>
                     </tr>
                 </tbody>
             </table>

@@ -72,3 +72,8 @@
     }
     
 </style>
+
+
+<?php
+  include 'pie.php';
+?>
